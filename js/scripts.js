@@ -1,3 +1,11 @@
+const apiURL = "//https://api.openweathermap.org/data/2.5/weather?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial"
+
+fetch (apiURL)
+.then((response)) => resonse.json())
+.then((weatherInfo) => {
+    console.log(weatherInfo);
+}); // end of .then
+
 fetch ("testdata.json")
 .then((mydata) => mydata.json())
 .then((mydata) => {
@@ -12,15 +20,11 @@ fetch ("testdata.json")
 });
 
 
-fetch (apiURL)
-.then((response)) => resonse.json())
-.then((weatherInfo) => {
-    console.log(weatherInfo);
-}); // end of .then
 
 
 
-const apiURL = "//https://api.openweathermap.org/data/2.5/weather?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial"
+
+
 
 const mydate = new Date();
 
