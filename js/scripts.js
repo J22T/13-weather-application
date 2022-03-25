@@ -6,6 +6,8 @@ fetch (apiURL)
         console.log(weatherInfo);
 
         document.getElementById('place').innerHTML=weatherInfo.name;
+        document.getElementById('currentTemp').innerHTML=weatherInfo.name;
+        document.getElementById('windSpeed').innerHTML=weatherInfo.name;
 }); // end of .then
 
 
