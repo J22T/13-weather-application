@@ -8,6 +8,8 @@ fetch (apiURL)
         document.getElementById('place').innerHTML=weatherInfo.name;
         document.getElementById('currentTemp').innerHTML=weatherInfo.main.temp;
         document.getElementById('windSpeed').innerHTML=weatherInfo.wind.speed;
+
+        const iconcode = weatherInfo.weather_icon
 }); // end of .then
 
 
@@ -39,6 +41,23 @@ fetch (apiURL)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const myweekday = new Array(7);
 
 // myweekday[0] = "Sunday";
@@ -50,3 +69,42 @@ fetch (apiURL)
 // myweekday[6] = "Saturday";
 
 // console.log(myweekday[3]);
+
+
+
+
+
+
+
+
+for (i = 0; i< MediaQueryList.length; i++) {
+
+    var time = mylist[i].dt_txt;
+    if (time.includes('21:00:00')) {
+
+    } //end if
+
+} // end for
+
+
+
+
+
+
+
+
+forecsetDayNumber += 1;
+
+if (forecastDayNumber ===7){
+    forecastDayNumber = 0;
+}
+
+
+
+
+
+if (time.includes('21:00:00')) {
+    let theDayName = document.createElement("span");
+    theDayName.textContent = weekday[forecastDayNumber];
+    console.log(">"+weekday[forecastDayNumber]);
+} // end if
