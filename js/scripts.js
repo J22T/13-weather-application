@@ -108,3 +108,24 @@ if (time.includes('21:00:00')) {
     theDayName.textContent = weekday[forecastDayNumber];
     console.log(">"+weekday[forecastDayNumber]);
 } // end if
+
+
+if (time.includes('21:00:00')) {
+    let theTemp = document.createElement("p");
+    theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+
+} // end if
+
+
+
+if (time.includes('21:00:00')) {
+
+
+    let iconcode =
+    weatherInfo.list[i].weather[0].icon;
+    let iconPath =
+    "//openweathermap.org/img/w/" + iconcode + "png";
+    let theIcon = document.createElement("img")
+    theIcon.src=iconPath;
+
+} // end if
