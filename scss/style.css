@@ -337,6 +337,11 @@ template {
   display: none;
 }
 
+section#weatherforecast {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
@@ -344,5 +349,17 @@ template {
   clear: both;
 }
 
+@media only screen and (min-width: 35rem) {
+  section#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /* end of media query */
+@media only screen and (min-width: 64rem) {
+  section#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 /* end of media query */
