@@ -41,6 +41,10 @@ fetch (apiURL)
 
         document.getElementById('place').innterHTML=weatherInfo.city.name;
 
+        document.getElementById('currentTemp').innterHTML=weatherInfo.main.temp;
+
+        document.getElementById('windSpeed').innterHTML=weatherInfo.wind.speed;
+
         let mylist = weatherInfo.list;
 
             let forecastDayNumber = todayDayNumber;
