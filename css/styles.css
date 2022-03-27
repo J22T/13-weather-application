@@ -337,12 +337,9 @@ template {
   display: none;
 }
 
-section#weatherforecast {
+main#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
-}
-section#weatherforecast div {
-  background-color: red;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -353,13 +350,13 @@ section#weatherforecast div {
 }
 
 @media only screen and (min-width: 35rem) {
-  section#weatherforecast {
+  main#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  section#weatherforecast {
+  main#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
