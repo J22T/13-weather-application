@@ -1,47 +1,24 @@
 /*
-Error: Undefined variable: "$fontFamily".
-        on line 9 of /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/_small.scss
-        from line 3 of /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/style.scss
+Error: File to import not found or unreadable: variables.
+       Load path: /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss
+        on line 3 of /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/style.scss
 
+1: @import "reset";
+2: 
+3: @import "variables";
 4: 
-5: @media only screen and (min-width: 35rem) {
-6:     @import "medium";
-7: } /* end of media query *\/
-8: 
-9: @media only screen and (min-width: 64rem) {
-10:     @import "large";
-11: } /* end of media query *\/
+5: @import "small";
+6: 
+7: @media only screen and (min-width: 35rem) {
+8:     @import "medium";
 
 Backtrace:
-/media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/_small.scss:9
 /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/style.scss:3
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:44:in `import'
+/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
 /home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /home/prometheus/Downloads/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +50,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontFamily\".\A         on line 9 of /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/_small.scss\A         from line 3 of /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/style.scss\A \A 4: \A 5: @media only screen and (min-width: 35rem) {\A 6:     @import \"medium\";\A 7: } /* end of media query */\A 8: \A 9: @media only screen and (min-width: 64rem) {\A 10:     @import \"large\";\A 11: } /* end of media query */"; }
+  content: "Error: File to import not found or unreadable: variables.\A        Load path: /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss\A         on line 3 of /media/prometheus/SSD_1_980 PRO/Users/HD/Desktop/Spring 2022/Code_Paul Cheney/projects/13-Weather Application/scss/style.scss\A \A 1: @import \"reset\";\A 2: \A 3: @import \"variables\";\A 4: \A 5: @import \"small\";\A 6: \A 7: @media only screen and (min-width: 35rem) {\A 8:     @import \"medium\";"; }

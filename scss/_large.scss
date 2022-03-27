@@ -1,3 +1,12 @@
+header, main, body {
+  max-width: 64rem;
+  margin: auto;
+}
+
+
+
+
+
 main#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
