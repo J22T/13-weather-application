@@ -1,8 +1,8 @@
 // api key f02e792d64350e7f05c1bb65d77dd55c
 
+// api call - city ID https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
 
-
-
+// api call - ZIP code https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}
 
 
 
