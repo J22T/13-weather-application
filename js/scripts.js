@@ -51,6 +51,7 @@ fetch (apiURL)
         //openweathermap.org/img/w/04n.png
 
         const icon_path ="//openwathermap.org/img/w/" +  iconcode + ".png";
+        console.log(icon_path);
 
         let mylist = weatherInfo.list;
 
