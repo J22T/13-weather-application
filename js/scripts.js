@@ -39,7 +39,7 @@ fetch (apiURL)
     .then((weatherInfo) => {
         console.log(weatherInfo);
 
-        document.getElementById("townName").textContent = weatherInfo.city.name;
+        document.getElementById('place').innterHTML=weatherInfo.city.name;
 
         let mylist = weatherInfo.list;
 
