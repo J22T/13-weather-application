@@ -50,6 +50,8 @@ fetch (apiURL)
 
         //openweathermap.org/img/w/04n.png
 
+        const icon_path ="" + + "";
+
         let mylist = weatherInfo.list;
 
             let forecastDayNumber = todayDayNumber;
