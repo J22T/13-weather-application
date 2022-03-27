@@ -48,6 +48,8 @@ fetch (apiURL)
         const iconcode = weatherInfo.weather[0].icon;
         console.log(iconcode);
 
+        //openweathermap.org/img/w/04n.png
+
         let mylist = weatherInfo.list;
 
             let forecastDayNumber = todayDayNumber;
