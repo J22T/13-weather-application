@@ -4,6 +4,17 @@
 
 // api call - ZIP code https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}
 
+// "id": 5410902,
+// "name": "Yorba Linda",
+// "state": "CA",
+// "country": "US",
+// "coord": {
+//     "lon": -117.81311,
+//     "lat": 33.88863
+
+
+
+
 
 
 const d = new Date();
