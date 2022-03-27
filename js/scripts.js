@@ -46,6 +46,7 @@ fetch (apiURL)
         document.getElementById('windSpeed').innterHTML=weatherInfo.wind.speed;
 
         const iconcode = weatherInfo.weather[0].icon;
+        console.log(iconcode);
 
         let mylist = weatherInfo.list;
 
