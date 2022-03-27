@@ -1,6 +1,12 @@
 section#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
+
+
+  div {
+    background-color: red;
+  }
+
 }
 
 

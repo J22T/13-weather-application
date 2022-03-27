@@ -341,6 +341,9 @@ section#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
 }
+section#weatherforecast div {
+  background-color: red;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
