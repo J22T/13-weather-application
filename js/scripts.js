@@ -32,7 +32,7 @@ const myweekday = new Array(7);
     myweekday[5] = "Friday";
     myweekday[6] = "Saturday";
 
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial;
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial";
 
 fetch ("apiURL")
     .then((response)) => response.json())
