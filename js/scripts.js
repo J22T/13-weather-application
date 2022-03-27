@@ -64,13 +64,13 @@ fetch (apiURL)
 
                 if (time.includes('21:00:00')) {
                     console.log(Found an entry with 21:00:00
-                    in the time. It was report "+i+" from the mylist of 40");
+                    in the time. It was report "+i+" from the mylist of 40"};
 
                     forecasetDayNumber +=1;
                     if(forecastDayNumber ===7) {forecastDayNumber = 0;}
                     console.log("Forecast Day Number " +
                     forecastDayNumber+" which is
-                    "+weekday[forecastDayNumber]);
+                    "+weekday(forecastDayNumber));
 
                     let theDayName = document.createElement("span");
                     theDayName.textContent = weekday[forecastDayNumber];
