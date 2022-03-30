@@ -72,7 +72,7 @@ fetch (apiURL)
                     // "+weekday(forecastDayNumber));
 
                     // let theDayName = document.createElement("span");
-                    theDayName.textContent = weekday[forecastDayNumber];
+                    // theDayName.textContent = weekday[forecastDayNumber];
 
                     let theTemp = document.createElement("p");
                     theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
