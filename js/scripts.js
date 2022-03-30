@@ -63,16 +63,15 @@ fetch (apiURL)
 
                 let time = mylist[i].dt_txt;
 
-                if (time.includes('21:00:00')) {
-                    console.log(Found an entry with 21:00:00 in the time. It was report "+i+" from the mylist of 40"};
+                // if (time.includes('21:00:00')) {console.log(Found an entry with 21:00:00 in the time. It was report "+i+" from the mylist of 40"};
 
                     forecasetDayNumber +=1;
                     if(forecastDayNumber ===7) {forecastDayNumber = 0;}
-                    console.log("Forecast Day Number " +
-                    forecastDayNumber+" which is
-                    "+weekday(forecastDayNumber));
+                    // console.log("Forecast Day Number " +
+                    // // forecastDayNumber+" which is
+                    // "+weekday(forecastDayNumber));
 
-                    let theDayName = document.createElement("span");
+                    // let theDayName = document.createElement("span");
                     theDayName.textContent = weekday[forecastDayNumber];
 
                     let theTemp = document.createElement("p");
@@ -94,7 +93,7 @@ fetch (apiURL)
 
                 } // end if
 
-        } // end for
+        // } // end for
 
     }); // end of "then" for arrow function
 
@@ -154,7 +153,7 @@ fetch (apiURL)
         // document.getElementById('windSpeed').innerHTML=weatherInfo.wind.speed;
 
         // const iconcode = weatherInfo.weather_icon
-}); // end of .then
+// }); // end of .then
 
 
 
