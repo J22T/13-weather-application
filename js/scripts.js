@@ -39,14 +39,14 @@ fetch (apiURL)
     .then((weatherInfo) => {
         console.log(weatherInfo);
 
-        document.getElementById('place').innterHTML=weatherInfo.city.name;
+        document.getElementById('place').innerHTML=weatherInfo.city.name;
 
         document.getElementById('currentTemp').innterHTML=weatherInfo.temp;
 
         // document.getElementById('windSpeed').innterHTML=weatherInfo.wind.speed;
 
-        const iconcode = weatherInfo.weather[0].icon;
-        console.log(iconcode);
+        // const iconcode = weatherInfo.weather[0].icon;
+        // console.log(iconcode);
 
         //openweathermap.org/img/w/04n.png
 
@@ -65,7 +65,7 @@ fetch (apiURL)
 
                 // if (time.includes('21:00:00')) {console.log(Found an entry with 21:00:00 in the time. It was report "+i+" from the mylist of 40"};
 
-                    forecasetDayNumber +=1;
+                    forecastDayNumber +=1;
                     if(forecastDayNumber ===7) {forecastDayNumber = 0;}
                     // console.log("Forecast Day Number " +
                     // // forecastDayNumber+" which is
