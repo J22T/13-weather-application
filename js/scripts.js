@@ -50,8 +50,8 @@ fetch (apiURL)
 
         //openweathermap.org/img/w/04n.png
 
-        const icon_path ="//openwathermap.org/img/w/" +  iconcode + ".png";
-        console.log(icon_path);
+        // const icon_path ="//openwathermap.org/img/w/" +  iconcode + ".png";
+        // console.log(icon_path);
 
         let mylist = weatherInfo.list;
 
@@ -64,8 +64,7 @@ fetch (apiURL)
                 let time = mylist[i].dt_txt;
 
                 if (time.includes('21:00:00')) {
-                    console.log(Found an entry with 21:00:00
-                    in the time. It was report "+i+" from the mylist of 40"};
+                    console.log(Found an entry with 21:00:00 in the time. It was report "+i+" from the mylist of 40"};
 
                     forecasetDayNumber +=1;
                     if(forecastDayNumber ===7) {forecastDayNumber = 0;}
