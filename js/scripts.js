@@ -41,7 +41,7 @@ fetch (apiURL)
 
         document.getElementById('place').innterHTML=weatherInfo.city.name;
 
-        document.getElementById('currentTemp').innterHTML=weatherInfo.main.temp;
+        document.getElementById('currentTemp').innterHTML=weatherInfo.temp;
 
         // document.getElementById('windSpeed').innterHTML=weatherInfo.wind.speed;
 
