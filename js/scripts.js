@@ -32,7 +32,7 @@ const myweekday = new Array(7);
     myweekday[5] = "Friday";
     myweekday[6] = "Saturday";
 
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial";
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial";
 
 fetch (apiURL)
     .then((response) => response.json())
@@ -43,7 +43,7 @@ fetch (apiURL)
 
         document.getElementById('currentTemp').innterHTML=weatherInfo.main.temp;
 
-        document.getElementById('windSpeed').innterHTML=weatherInfo.wind.speed;
+        // document.getElementById('windSpeed').innterHTML=weatherInfo.wind.speed;
 
         const iconcode = weatherInfo.weather[0].icon;
         console.log(iconcode);
