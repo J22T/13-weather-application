@@ -23,14 +23,7 @@
 // const todayDayNumber = d.getDay();
 // console.log(todayDayNumber);
 
-// const myweekday = new Array(7);
-//     myweekday[0] = "Sunday";
-//     myweekday[1] = "Monday";
-//     myweekday[2] = "Tuesday";
-//     myweekday[3] = "Wednesday";
-//     myweekday[4] = "Thursday";
-//     myweekday[5] = "Friday";
-//     myweekday[6] = "Saturday";
+
 
 const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5410902&appid=f02e792d64350e7f05c1bb65d77dd55c&units=imperial";
 
@@ -50,6 +43,18 @@ fetch (apiURL)
         console.log(icon_path);
 
         document.getElementById('weather_icon').src = icon_path;
+
+        const myweekday = new Date(7);
+        myweekday[0] = "Sunday";
+        myweekday[1] = "Monday";
+        myweekday[2] = "Tuesday";
+        myweekday[3] = "Wednesday";
+        myweekday[4] = "Thursday";
+        myweekday[5] = "Friday";
+        myweekday[6] = "Saturday";
+
+        const y = myweekday.getDay();
+        console.log(weatherInfo.city.name);
 
     }); // end of "then" for arrow function
 
