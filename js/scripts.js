@@ -59,7 +59,7 @@ fetch (apiURL)
 
 
 
-        
+
                         let forecastDayNumber = todayDayNumber;
                         console.log(forecastDayNumber);
 
@@ -69,29 +69,30 @@ fetch (apiURL)
 
                                         // var time = mylist[i].dt_txt;
 
-                                                            if (time.includes('21:00:00')) {
+                                        if (time.includes('21:00:00')) {
 
-                                                                                let theDayName = document.createElement("span");
-                                                                                theDayName.textContent = weekday[forecastDayNumber];
-                                                                                console.log(">"+weekday[forecastDayNumber]);
+                                                            forecastDayNumber += 1;
+                                                            if (forecastDayNumber === 7){forecastDayNumber = 0};
 
-                                                                                let theTemp = document.createElement("p");
-                                                                                theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+                                                            let theDayName = document.createElement("span");
+                                                            theDayName.textContent = weekday[forecastDayNumber];
+                                                            console.log(">"+weekday[forecastDayNumber]);
 
-                                                                                let iconcode =
-                                                                                weatherInfo.list[i].wether[0].icon;
-                                                                                let iconPath =
-                                                                                "//openweathermap.org/img/wn/" + iconcode + ".png";
-                                                                                let theIcon = document.createElement("img")
-                                                                                theIcon.src=iconPath;
+                                                            let theTemp = document.createElement("p");
+                                                            theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
 
-                                                                                let theDay = document.createElement("div");
-                                                                                theDay.appendChild(theDayName);
-                                                                                theDay.appendChild(theTemp);
-                                                                                theDay.appendChild(theIcon);
-                                                                    
-                                                                                document.getElementById('weatherforecast').appendChild(theDay);
-                                                                }
+                                                            let iconcode =weatherInfo.list[i].weather[0].icon;
+                                                            let iconPath ="//openweathermap.org/img/wn/" + iconcode + ".png";
+                                                            let theIcon = document.createElement("img");
+                                                            theIcon.src=iconPath;
+
+                                                            let theDay = document.createElement("div");
+                                                            theDay.appendChild(theDayName);
+                                                            theDay.appendChild(theTemp);
+                                                            theDay.appendChild(theIcon);
+                                                
+                                                            document.getElementById('weatherforecast').appendChild(theDay);
+                                            }
 
                                         }
 
