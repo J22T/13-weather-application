@@ -69,10 +69,10 @@ fetch (apiURL)
 
                                                             forecastDayNumber += 1;
                                                             if (forecastDayNumber === 7){forecastDayNumber = 0;}
-                                                            console.log("Forecast Day Number " + forecastDayNumber+" which is"+weekday[forecastDayNumber]);
+                                                            console.log("Forecast Day Number " + forecastDayNumber+" which is"+myweekday[forecastDayNumber]);
 
                                                             let theDayName = document.createElement("span");
-                                                            theDayName.textContent = weekday [forecastDayNumber];
+                                                            theDayName.textContent = myweekday [forecastDayNumber];
                                                             // console.log(">"+weekday[forecastDayNumber]);
 
                                                             let theTemp = document.createElement("p");
