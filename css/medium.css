@@ -1,0 +1,26 @@
+@media only screen and (min-width: 35rem) {
+
+  nav ul {display: flex;}
+  nav ul li{flex-basis: 25%;}
+
+  main figure {
+
+      float: right;
+      width: 48%;
+      margin-left:2%;
+  };
+
+  div.news {
+      clear:both;
+      column-count: 2;
+      column-rule: 1px solid #ddd;
+  }
+}
+
+
+
+
+
+main#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
