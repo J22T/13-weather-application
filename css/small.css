@@ -24,23 +24,3 @@ div#weatherforecast {
   grid-template-columns: 1fr;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// /*----- Clearfix: Force an Element not to collapse -----*/
-// .clearfix:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-// }

@@ -28,8 +28,6 @@ const d = new Date();
 
 const todayDayNumber = d.getDay();
 
-let forecastDayNumber = todayDayNumber;
-
 const myweekday = new Date(7);
     myweekday[0] = "Sunday";
     myweekday[1] = "Monday";
@@ -59,24 +57,28 @@ fetch (apiURL)
         let list = weatherInfo.list;
         
                         let forecastDayNumber = todayDayNumber;
-                        console.log(forecastDayNumber);
+
+                        // console.log(forecastDayNumber);
 
                         for (i=0; i < list.length; i++) {
 
-                                        // let time = list[i].dt_txt;
+                                        let time = list[i].dt_txt;
 
-                                        var time = list[i].dt_txt;
+                                        // var time = list[i].dt_txt;
                                         if (time.includes('21:00:00')) {
 
                                                             forecastDayNumber += 1;
                                                             if (forecastDayNumber === 7){forecastDayNumber = 0;}
+                                                            console.log("Forecast Day Number " + forecastDayNumber+" which is"+weekday[forecastDayNumber]);
 
                                                             let theDayName = document.createElement("span");
-                                                            // theDayName.textContent = weekday[forecastDayNumber];
+                                                            theDayName.textContent = weekday [forecastDayNumber];
                                                             // console.log(">"+weekday[forecastDayNumber]);
 
                                                             let theTemp = document.createElement("p");
                                                             theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+
+                                                            console.log("TEMPERATURE>"+weatherInfo.list[i].main.temp);
 
                                                             let iconcode =weatherInfo.list[i].weather[0].icon;
                                                             let iconPath ="//openweathermap.org/img/wn/" + iconcode + ".png";
