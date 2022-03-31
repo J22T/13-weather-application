@@ -53,8 +53,32 @@ fetch (apiURL)
         myweekday[5] = "Friday";
         myweekday[6] = "Saturday";
 
+        console.log(myweekday[3]);
+
         const y = myweekday.getDay();
         console.log(weatherInfo.city.name);
+
+
+
+        const d = new Date();
+
+        const todayDayNumber =
+        d.getDay();
+
+        let forecastDayNumber =
+        todayDayNumber;
+
+        console.log(forecastDayNumber);
+
+
+
+        for (i=0; i < MediaQueryList.length; i++) {
+
+            var time = mylist[i].dt_txt;
+            if (time.includes('21:00:00')) {
+
+            }
+        }
 
     }); // end of "then" for arrow function
 

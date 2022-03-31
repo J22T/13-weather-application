@@ -16,15 +16,18 @@ header {
 }
 
 
-
 main#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
 
+  div {
+  border-radius: solid 1px black;
 
+          #weather_icon {
+            font-size: 2rem;
+          }
+        }
 }
-
-
 
 
 
