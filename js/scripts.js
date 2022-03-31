@@ -28,6 +28,8 @@ const d = new Date();
 
 const todayDayNumber = d.getDay();
 
+let forecastDayNumber = todayDayNumber;
+
 const myweekday = new Date(7);
     myweekday[0] = "Sunday";
     myweekday[1] = "Monday";
@@ -54,21 +56,16 @@ fetch (apiURL)
 
         document.getElementById('townName').textContent = weatherInfo.city.name;
 
-        let mylist = weatherInfo.list;
-
-
-
-
-
+        let list = weatherInfo.list;
+        
                         let forecastDayNumber = todayDayNumber;
                         console.log(forecastDayNumber);
 
-                        for (i=0; i < mylist.length; i++) {
+                        for (i=0; i < list.length; i++) {
 
-                                        let time = mylist[i].dt_txt;
+                                        // let time = list[i].dt_txt;
 
-                                        // var time = mylist[i].dt_txt;
-
+                                        var time = list[i].dt_txt;
                                         if (time.includes('21:00:00')) {
 
                                                             forecastDayNumber += 1;
