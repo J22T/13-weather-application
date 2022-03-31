@@ -39,7 +39,7 @@ fetch (apiURL)
         const iconcode = weatherInfo.list[0].weather[0].icon;
         console.log(iconcode);
 
-        const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
+        const icon_path = "//openweathermap.org/img/wn/" + iconcode + ".png";
         console.log(icon_path);
 
         document.getElementById('weather_icon').src = icon_path;
@@ -79,8 +79,19 @@ fetch (apiURL)
                 let theDayName = document.createElement("span");
                 theDayName.textContent = weekday[forecastDayNumber];
                 console.log(">"+weekday[forecastDayNumber]);
-
             }
+
+            if (time.includes('21:00:00')) {
+                let theTemp = document.createElement("p");
+                theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+            }
+
+            let iconcode =
+            weatherInfo.list[i].wether[0].icon;
+            let iconPath =
+            "//openweathermap.org/img/wn/" + iconcode + ".png";
+            let theIcon = document.createElement("img")
+            theIcon.src=iconPath;
         }
 
     }); // end of "then" for arrow function
