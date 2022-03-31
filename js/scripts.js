@@ -76,6 +76,9 @@ fetch (apiURL)
 
             var time = mylist[i].dt_txt;
             if (time.includes('21:00:00')) {
+                let theDayName = document.createElement("span");
+                theDayName.textContent = weekday[forecastDayNumber];
+                console.log(">"+weekday[forecastDayNumber]);
 
             }
         }
