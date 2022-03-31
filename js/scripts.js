@@ -72,7 +72,7 @@ fetch (apiURL)
                                         if (time.includes('21:00:00')) {
 
                                                             forecastDayNumber += 1;
-                                                            if (forecastDayNumber === 7){forecastDayNumber = 0};
+                                                            if (forecastDayNumber === 7){forecastDayNumber = 0;}
 
                                                             let theDayName = document.createElement("span");
                                                             theDayName.textContent = weekday[forecastDayNumber];
