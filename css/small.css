@@ -12,29 +12,31 @@ body {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: 300;
+    font-weight: normal;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
   }
   
+  h2 {
+      font-weight: normal;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+  }
 }
 
 
-main#weatherforecast {
+div#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
 
-  div {
-  border-radius: 1px solid black;
-    margin: 10rem;
-  }
+  div.card {
+    border:1px solid #999;
+    text-align: center;
 
 }
 
