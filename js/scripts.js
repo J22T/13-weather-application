@@ -41,7 +41,7 @@ fetch (apiURL)
 
         document.getElementById('place').innerHTML=weatherInfo.city.name;
 
-        document.getElementById('currentTemp').innerHTML=weatherInfo.city.name.temp_max;
+        document.getElementById('currentTemp').innerHTML=weatherInfo.list[0].main.temp;
 
 
 
