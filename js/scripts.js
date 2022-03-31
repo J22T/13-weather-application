@@ -43,7 +43,8 @@ fetch (apiURL)
 
         document.getElementById('currentTemp').innerHTML=weatherInfo.list[0].main.temp;
 
-
+        const iconcode = weatherInfo.list[0].weather[0].icon;
+        console.log(iconcode);
 
     }); // end of "then" for arrow function
 
