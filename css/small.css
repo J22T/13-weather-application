@@ -6,8 +6,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* BODY  */
 body {
-	font-family: kanit;
-	font-size: 16px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -15,12 +15,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 
-}
+  }
 
 
 div#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
-
+  ;
 }
