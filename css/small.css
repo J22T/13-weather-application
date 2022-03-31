@@ -19,6 +19,16 @@ header {
   margin-top: 2rem;
   }
 
+  header h1 {
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
 
 div#weatherforecast {
   display: grid;
