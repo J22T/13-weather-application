@@ -20,7 +20,7 @@ header {
   }
 
   header h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   header h2 {
@@ -50,9 +50,10 @@ div#weatherforecast div span {
   height: auto;
   font-weight: bold;
   text-align: center;
-  margin:1rem;
   font-size: 20px;
   color: white;
+  background-color: black;
+  padding: 1rem;
 }
 
 div#weatherforecast div p {
