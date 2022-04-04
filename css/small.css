@@ -64,3 +64,7 @@ div#weatherforecast div p {
   font-size: 50px;
   color: white;
 }
+
+div#weatherforecast div img#weather_icon {
+font-size: 1px;
+}

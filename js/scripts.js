@@ -73,15 +73,16 @@ fetch (apiURL)
 
                                                             let theDayName = document.createElement("span");
                                                             theDayName.textContent = myweekday [forecastDayNumber];
-                                                            // console.log(">"+weekday[forecastDayNumber]);
+                                                            console.log(">"+myweekday[forecastDayNumber]);
 
                                                             let theTemp = document.createElement("p");
                                                             theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
 
                                                             console.log("TEMPERATURE>"+weatherInfo.list[i].main.temp);
 
-                                                            let iconcode =weatherInfo.list[i].weather[0].icon;
-                                                            let iconPath ="//openweathermap.org/img/wn/" + iconcode + ".png";
+                                                            // const iconcode = weatherInfo.weather[0].icon;
+                                                            let weather_icon =weatherInfo.list[i].weather[0].icon;
+                                                            let iconPath ="//openweathermap.org/img/wn/" + weather_icon + ".png";
                                                             let theIcon = document.createElement("img");
                                                             theIcon.src=iconPath;
 
