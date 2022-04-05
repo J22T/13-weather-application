@@ -19,7 +19,7 @@
     }
 
 
-header, main, body {
+main, body {
   max-width: 64rem;
   margin: auto;
 }
@@ -28,6 +28,7 @@ header, main, body {
 
 div#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 0rem;
   }
 
 }
